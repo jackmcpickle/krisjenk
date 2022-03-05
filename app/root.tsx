@@ -11,9 +11,8 @@ import type { MetaFunction } from "remix";
 import styles from './styles/app.css';
 
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
+  return { title: 'Kris Jenkinson - Cinematographer' };
 };
-
 
 export function links() {
     return [{ rel: 'stylesheet', href: styles }];
