@@ -5,3 +5,5 @@ node_modules
 /public/build
 # generated with tailwindcss
 /app/styles/*.css
+
+.env
