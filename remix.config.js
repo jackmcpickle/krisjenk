@@ -1,14 +1,21 @@
-/**
- * @type {import('@remix-run/dev').AppConfig}
- */
+/** @type {import('@remix-run/dev').AppConfig} */
 module.exports = {
-  serverBuildTarget: "cloudflare-pages",
-  server: "./server.js",
-  devServerBroadcastDelay: 1000,
-  ignoredRouteFiles: [".*"],
-  // appDirectory: "app",
-  // assetsBuildDirectory: "public/build",
-  // serverBuildPath: "functions/[[path]].js",
-  // publicPath: "/build/",
-  // devServerPort: 8002
+    future: {
+        v2_errorBoundary: true,
+        v2_meta: true,
+        v2_normalizeFormMethod: true,
+        v2_routeConvention: true,
+        unstable_tailwind: true,
+    },
+    publicPath: '/build/',
+    serverBuildPath: 'build/index.js',
+    server: './server.ts',
+    devServerBroadcastDelay: 1000,
+    ignoredRouteFiles: ['**/.*'],
+    serverConditions: ['worker'],
+    serverMainFields: ['browser', 'module', 'main'],
+    serverModuleFormat: 'esm',
+    serverPlatform: 'neutral',
+    serverDependenciesToBundle: 'all',
+    serverMinify: true,
 };

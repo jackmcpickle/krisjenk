@@ -11,7 +11,7 @@ body {
 
 .bgd-rotator {
     position: absolute;
-        top: -50%;
+    top: -50%;
     left: -50%;
     right: 0;
     bottom: 0;
@@ -26,9 +26,13 @@ body {
     z-index: -1;
 }
 
-@keyframes spin{
-    from{transform:rotate(0deg)}
-    to{transform:rotate(360deg)}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @tailwind utilities;

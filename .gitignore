@@ -2,8 +2,6 @@ node_modules
 
 /.cache
 /functions/\[\[path\]\].js
-/public/build
-# generated with tailwindcss
-/app/styles/*.css
+build/*
 
 .env
