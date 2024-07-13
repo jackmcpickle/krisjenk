@@ -3,7 +3,18 @@ import {
     PhoneIcon,
     VideoCameraIcon,
 } from '@heroicons/react/24/solid';
+import type { MetaFunction } from '@remix-run/cloudflare';
 import { VimeoIcon } from '~/components/Vimeo';
+
+export const meta: MetaFunction = () => {
+    return [
+        { title: 'Kris Jenkinson - Cinematographer' },
+        {
+            name: 'description',
+            content: 'Freelance cinematographer based in Adelaide, Australia.',
+        },
+    ];
+};
 
 export default function Index() {
     return (

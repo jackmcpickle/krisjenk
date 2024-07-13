@@ -1,14 +1,6 @@
 @tailwind base;
 @tailwind components;
 
-html {
-    @apply h-full overflow-hidden;
-}
-
-body {
-    @apply flex flex-col justify-center h-full overflow-hidden;
-}
-
 .bgd-rotator {
     position: absolute;
     top: -50%;
