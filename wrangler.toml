@@ -1,16 +1,14 @@
-name = "krisjenk"
-account_id = "16a04bbc76ee5eccbcc1d6c39bc9a797"
+name = "krisjenkinson"
+# account_id = "16a04bbc76ee5eccbcc1d6c39bc9a797"
 
 main = "./server.js"
 # https://developers.cloudflare.com/workers/platform/compatibility-dates
 compatibility_date = "2023-04-20"
-compatibility_flags = ["streams_enable_constructors"]
+# compatibility_flags = ["streams_enable_constructors"]
 
 workers_dev = true
 logpush = true
 node_compat = true
-
-usage_model = 'bundled'
 
 routes = [
     "krisjenkinson.com",
