@@ -1,0 +1,68 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '~/components/Layout.astro';
+import VideoCameraIcon from '~/components/icons/VideoCameraIcon.astro';
+import PhoneIcon from '~/components/icons/PhoneIcon.astro';
+import EnvelopeIcon from '~/components/icons/EnvelopeIcon.astro';
+import VimeoIcon from '~/components/icons/VimeoIcon.astro';
+---
+
+<Layout>
+    <div class="perspective-shift h-full overflow-hidden">
+        <div class="bgd-rotator"></div>
+        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+            <div class="text-center">
+                <h2
+                    class="flex items-center justify-center text-base font-semibold uppercase tracking-wide text-gray-200"
+                >
+                    <VideoCameraIcon class="mr-2 h-7 w-7" />
+                    <span>Cinematographer</span>
+                </h2>
+                <h1
+                    class="relative z-10 mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl"
+                >
+                    Kris Jenkinson
+                </h1>
+
+                <div class="my-6">
+                    <Image
+                        loading={'eager'}
+                        width={500}
+                        height={500}
+                        src="/krisjenk.jpeg"
+                        alt="kris jenk"
+                        class="inline-block max-w-[250px] transform rounded-full transition-transform duration-150 hover:scale-105"
+                    />
+                </div>
+                <p class="mx-auto mt-5 max-w-xl text-xl text-stone-100">
+                    Freelance cinematographer based in Adelaide, Australia.
+                </p>
+                <p class="mt-6 flex items-center justify-center text-gray-100">
+                    <a
+                        aria-label="Call me on my phone"
+                        href="tel:+61438125886"
+                        class="transform text-gray-200 transition-all duration-150 hover:scale-105 hover:text-white"
+                    >
+                        <PhoneIcon class="mr-2 h-7 w-7" />
+                    </a>
+                    <a
+                        aria-label="Send me an email"
+                        href="mailto:hello@krisjenkinson.com"
+                        class="transform text-gray-200 transition-all duration-150 hover:scale-105 hover:text-white"
+                    >
+                        <EnvelopeIcon class="mr-2 h-7 w-7" />
+                    </a>
+                    <a
+                        aria-label="Watch my videos on Vimeo"
+                        href="https://vimeo.com/717888495"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="transform text-gray-200 transition-all duration-150 hover:scale-105 hover:text-white"
+                    >
+                        <VimeoIcon class="mr-2 h-7 w-7" />
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</Layout>
