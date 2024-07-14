@@ -1,6 +1,10 @@
+---
+import '../app.css';
+---
+
 <html
     lang="en"
-    class="bg-stone-900 h-full overflow-hidden"
+    class="h-full overflow-hidden bg-stone-900"
 >
     <head>
         <meta charset="utf-8" />
@@ -13,12 +17,8 @@
             name="description"
             content="Freelance cinematographer based in Adelaide, Australia."
         />
-        <link
-            rel="stylesheet"
-            href="/src/app.css"
-        />
     </head>
-    <body class="flex flex-col justify-center h-full overflow-hidden">
+    <body class="flex h-full flex-col justify-center overflow-hidden">
         <slot />
     </body>
 </html>
